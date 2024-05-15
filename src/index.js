@@ -1,16 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+
 import reportWebVitals from './reportWebVitals';
-import Je from '../src/Je';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
+
+import Forms from './Hello';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Forms/>
   </React.StrictMode>
 );
 
