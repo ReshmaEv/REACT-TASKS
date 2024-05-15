@@ -7,12 +7,13 @@ import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Forms from './Hello';
+import CounterApp from './counterApp'
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Forms/>
+    <CounterApp/>
   </React.StrictMode>
 );
 
