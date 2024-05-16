@@ -1,8 +1,9 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function CounterApp(){
    
     const [count,setCount] =useState(0)
+    const [calculation,setCalculation] = useState(0)
 
     const handleIncrement = ()=>{
         console.log("success");
@@ -18,6 +19,13 @@ function CounterApp(){
             }
         });
     };
+
+    useEffect(()=>{
+        setCalculation(()=>count*2)
+    },[count])
+    
+        
+        
    
     return(
         <div>
@@ -26,6 +34,9 @@ function CounterApp(){
             <button  onClick={handleDecrement} style={{width:'100px',height:"50px",marginLeft:"50px"}}>mines</button>
              </>
             <div style={{fontSize:'30px',marginLeft:'50px',margintop:'50px'}}> count:{count}</div>
+            <p>calculation:{calculation}</p>
+
+            
         </div>
 
 

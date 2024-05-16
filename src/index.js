@@ -8,12 +8,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Forms from './Hello';
 import CounterApp from './counterApp'
+import Fetch from './Fetch';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <CounterApp/>
+    {/* <CounterApp/> */}
+    <Fetch/>
   </React.StrictMode>
 );
 
